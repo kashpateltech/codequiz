@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="high-scores">
+        <div class="high--scores">
             <a href id="scores">High Scores</a>
         </div>
         <div class="countdown-timer" id="countdown-timer">
@@ -35,9 +35,9 @@
             <button class="btn">C</button>
             <button class="btn">D</button>
         </div>
-        <h2 class="right-wrong hidden" id="selction-check">
+        <h2 class="right-wrong hidden" id="selection-check"></h2>
             <!--to prompt right or wrong answer and then hide when proceeding to the next question -->
-        </h2>
+        
         <div class="buttons">
             <button class="btn-next hidden" id="btn-next">Next</button>
         </div>
@@ -48,7 +48,7 @@
         <form id="scores-form">
             <h2 id="your-score"></h2>
             <label id="user-initials">Enter your initials to save your score: </label>
-            <input type="text" id="initials" maxlength="2" placeholder="Enter characters" />
+            <input type="text" id="initials-field" maxlength="2" placeholder="Enter characters" />
             <button id="btn-submit">Submit</button>          
         </form>
     </section>
@@ -56,7 +56,7 @@
     <section class="hidden high-scores-container" id="high-scores">
         <div id="scoreboard">
             <h1>Scoreboard</h1>
-            <div class="high-scores high-scores-list" id="high-scores">
+            <div class="high-scores high-scores-list" id="high-score">
             </div>
             <div class="buttons">
                 <button id="btn-try-again">Try Again!</button>
@@ -64,9 +64,9 @@
             </div>
         </div>
     </section>
-
-
-    <script src="script.js"></script>
-    <script src="questions.js"></script>
+   
 </body>
+<script src="script.js"></script>
+<script src="questions.js"></script>
+
 </html>

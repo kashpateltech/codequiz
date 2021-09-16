@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-a {
+a, .high--scores {
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ button {
     background-color: var(--primary-color);
     color: var(--white-color);
     margin: 0.65rem;
-    padding: 0.65rem
+    padding: 0.65rem;
     font-family: sans-serif;
     font-size: large;
     cursor: pointer;
@@ -110,9 +110,15 @@ input[type="text"] {
     }
   }
 
-  .name-div,
-  .score-div {
+  .name-sec,
+  .score-sec {
     flex: 1 35%;
     padding: 0.65rem 0;
     border: 1px solid var(--right-color);
+  }
+
+  .high-scores {
+      display:flex;
+      flex-wrap: wrap;
+      text-align: center;
   }
