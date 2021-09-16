@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="high-scores">
+            <a href class="scores">High Scores</a>
+        </div>
+        <div class="countdown-timer" id="countdown-timer">
+            Remaining Time: 120
+        </div>
+    </header>
+
+    <section class="home-start-quiz" id=main-container>
+        <h1>Code Quiz</h1>
+        <p>This is a multiple choice quiz. You will have 120 seconds to complete the quiz. For every incorrect answer there will be a time reduction penalty of 10 seconds. Your final score will be revealed at the end of the quiz. To start the quiz please click on the start button.</p>
+        
+        <div class="buttons">
+            <button id="btn-start">Start</button>
+        </div>
+    </section>
+
+<!--secondary container for quiz questions and should be hidden unless user clicks start button-->
+    <section class="hidden" id="secondary-container">
+        <h1 id="quiz-questions">Question</h1>
+        <div class="btn-grid" id="selection-btn">
+            <button class="btn">A</button>
+            <button class="btn">B</button>
+            <button class="btn">C</button>
+            <button class="btn">D</button>
+        </div>
+        <h2 class="right-wrong hidden" id="selction-check">
+            <!--to prompt right or wrong answer and then hide when proceeding to the next question -->
+        </h2>
+        <div class="buttons">
+            <button class="btn-next hidden" id="btn-next">Next</button>
+        </div>
+    </section>
+
+    <!--HIGH SCORES SECTION-->
+    <section class="hidden" id="scores-container">
+        <form id="scores-form">
+            <h2 id="your-score"></h2>
+            <label id="user-initials">Enter your initials to save your score: </label>
+            <input type="text" id="initials" maxlength="2" placeholder="Enter characters" />
+            <button id="btn-submit">Submit</button>          
+        </form>
+    </section>
+
+    <section class="hidden high-scores-container" id="high-scores">
+        <h1>Scoreboard</h1>
+    </section>
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
