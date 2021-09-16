@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="high-scores">
-            <a href class="scores">High Scores</a>
+            <a href id="scores">High Scores</a>
         </div>
         <div class="countdown-timer" id="countdown-timer">
             Remaining Time: 120
@@ -26,8 +26,8 @@
         </div>
     </section>
 
-<!--secondary container for quiz questions and should be hidden unless user clicks start button-->
-    <section class="hidden" id="secondary-container">
+<!--quiz questions container for quiz questions and should be hidden unless user clicks start button-->
+    <section class="hidden" id="quiz-questions-container">
         <h1 id="quiz-questions">Question</h1>
         <div class="btn-grid" id="selection-btn">
             <button class="btn">A</button>
@@ -54,8 +54,18 @@
     </section>
 
     <section class="hidden high-scores-container" id="high-scores">
-        <h1>Scoreboard</h1>
+        <div id="scoreboard">
+            <h1>Scoreboard</h1>
+            <div class="high-scores high-scores-list" id="high-scores">
+            </div>
+            <div class="buttons">
+                <button id="btn-try-again">Try Again!</button>
+                <button id="btn-clear">Clear Scores</button>
+            </div>
+        </div>
     </section>
+
+
     <script src="script.js"></script>
     <script src="questions.js"></script>
 </body>

@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #a332ba;
+    --secondary-color: #16181a;
+    --tertiary-color: #aaaaaa;
+    --white-color: #ffffff;
+    --right-color: #3d9b1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Sans-serif;
+    line-height: 1.6rem;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.6rem;
+}
+
+.highscores a {
+    color: var(--tertiary-color);
+}
+
+.home-start-quiz {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.65rem;
+}
+
+h2 {
+    text-align: center
+    margin: 1.25rem 0;
+    border-top: 0.06rem solid var(--tertiary-color);
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 0.65rem;
+    margin: 1.25rem 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin: 0.65rem;
+    padding: 0.65rem
+    font-family: sans-serif;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 0.65rem;
+    width: auto;
+    border: none;
+    overflow: visible;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-right {
+    background-color: var(--right-color);
+}
+
+.btn-wrong {
+    background-color: var(--tertiary-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+input[type="text"] {
+    border: 0.07rem solid var(--tertiary-color);
+    border-radius: 0.25rem;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .btn-grid {
+      grid-template-columns: (1, auto);
+      gap: 0;
+      margin: 0;
+    }
+  }
+
+  .name-div,
+  .score-div {
+    flex: 1 35%;
+    padding: 0.65rem 0;
+    border: 1px solid var(--right-color);
+  }
