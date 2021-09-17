@@ -12,8 +12,6 @@ var selectionCheckEl = document.getElementById("selection-check");
 var submitButton = document.getElementById("btn-submit");
 var clearButton = document.getElementById("btn-clear");
 var tryAgainButton = document.getElementById("btn-try-again");
-//var initials = document.getElementById("player-name");
-//var scoreField = document.getElementById("player-score");
 var scores = JSON.parse(localStorage.getItem("high-scores")) || [];
 var timerCountdown;
 var remainingTime = 120;
