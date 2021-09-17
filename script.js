@@ -43,7 +43,7 @@ function timer() {
 function startQuiz() {
     timerCountdown = setInterval(timer, 1000);
     mainContainerEl.classList.add("hidden");
-    shuffledQuestions = questions.sort(() => Math.random() - 5);
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     quizQuestionsContainerEl.classList.remove("hidden");
 
